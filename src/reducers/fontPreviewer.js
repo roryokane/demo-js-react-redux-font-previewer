@@ -1,6 +1,4 @@
 import {SELECT_FONT, CHANGE_PREVIEW_TEXT} from '../constants/ActionTypes';
-//import calculator from '../businessLogic/fuelSavingsCalculator';
-//import dateHelper from '../businessLogic/dateHelper';
 
 const initialState = {
 	selectedFont: "Times New Roman",
