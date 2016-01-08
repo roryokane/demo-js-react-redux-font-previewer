@@ -1,5 +1,7 @@
 import React, {PropTypes} from 'react';
 import FontSelector from './FontSelector';
+import PreviewTextInput from './PreviewTextInput';
+import PreviewText from './PreviewText';
 
 class FontPreviewerApp extends React.Component {
   constructor(props) {
@@ -14,8 +16,8 @@ class FontPreviewerApp extends React.Component {
     this.props.actions.selectFont(fontName);
   }
   
-  changePreviewText(e) {
-    this.props.actions.changePreviewText(e.target.value);
+  changePreviewText(newText) {
+    this.props.actions.changePreviewText(newText);
   }
 
   render() {
@@ -26,22 +28,9 @@ class FontPreviewerApp extends React.Component {
       <div>
         <h2>Webfont Previewer</h2>
 
-        <FontSelector fonts={fonts} onChange={this.onFontSelected}></FontSelector>
-
-        <div className="edit-preview-text">
-          <label>
-            Preview Text:
-            <textarea value={settings.previewText} onChange={this.changePreviewText}></textarea>
-          </label>
-        </div>
-
-        <div className="preview-text">
-          <h3>Preview</h3>
-          <div style={{fontFamily: settings.selectedFont}}>
-            {settings.previewText}
-          </div>
-        </div>
-
+        <FontSelector fonts={fonts} onChange={this.onFontSelected} />
+        <PreviewTextInput value={settings.previewText} onChange={this.changePreviewText} />
+        <PreviewText fontName={settings.selectedFont} text={settings.previewText} />
       </div>
     );
   }
