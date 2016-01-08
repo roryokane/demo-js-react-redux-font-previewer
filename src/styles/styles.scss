@@ -17,8 +17,19 @@ body {
   font-weight: 300;
 }
 
-td {
-	padding: 12px;
+input, select, textarea {
+  font-size: 14px;
+}
+
+.font-selector, .edit-preview-text, .preview-text {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.edit-preview-text textarea {
+  display: block;
+  width: 300px;
+  height: 3em;
 }
 
 h2 {

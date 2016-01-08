@@ -3,33 +3,33 @@
 import React, {PropTypes} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import FuelSavingsApp from '../components/FuelSavingsApp';
-import * as FuelSavingsActions from '../actions/fuelSavingsActions';
+import FontPreviewerApp from '../components/FontPreviewerApp';
+import * as FontPreviewingActions from '../actions/fontPreviewingActions';
 
 class App extends React.Component {
   render() {
-    const { fuelSavingsAppState, actions } = this.props;
+    const { fontPreviewerAppState, actions } = this.props;
 
     return (
-        <FuelSavingsApp fuelSavingsAppState={fuelSavingsAppState} actions={actions} />
+        <FontPreviewerApp fontPreviewerAppState={fontPreviewerAppState} actions={actions} />
     );
   }
 }
 
 App.propTypes = {
   actions: PropTypes.object.isRequired,
-  fuelSavingsAppState: PropTypes.object.isRequired
+  fontPreviewerAppState: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state) {
   return {
-    fuelSavingsAppState: state.fuelSavingsAppState
+    fontPreviewerAppState: state.fontPreviewerAppState
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(FuelSavingsActions, dispatch)
+    actions: bindActionCreators(FontPreviewingActions, dispatch)
   };
 }
 
