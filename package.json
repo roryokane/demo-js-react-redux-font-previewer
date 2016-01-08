@@ -1,7 +1,7 @@
 {
-  "name": "react-slingshot",
-  "version": "1.0.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "demo-js-react-redux-font-previewer",
+  "version": "0.1.0",
+  "description": "A demonstration React/Redux app that lets you preview some webfonts.",
   "scripts": {
     "prestart": "npm run remove-dist",
     "start": "parallelshell \"npm run test\" \"npm run open\"",
