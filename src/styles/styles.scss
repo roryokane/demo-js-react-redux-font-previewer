@@ -26,6 +26,11 @@ input, select, textarea {
 	padding-bottom: 12px;
 }
 
+.font-selector ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
 .edit-preview-text textarea {
   display: block;
   width: 300px;

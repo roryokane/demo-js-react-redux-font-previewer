@@ -15,15 +15,23 @@ class FontSelector extends Component {
 	render() {
 		return (
 			<div className="section font-selector">
-				<label>
-					Font:
-					{" "}
-					<select name="font-name" onChange={this.handleChange} value={this.props.value}>
-						{this.props.options.map((fontName) => {
-							return <option value={fontName} key={fontName}>{fontName}</option>;
-						})}
-					</select>
-				</label>
+				Font:
+				<ul>
+					{this.props.options.map((fontName) => {
+						return (
+							<li key={fontName}>
+								<label>
+									<input type="radio" name="fontName"
+										value={fontName}
+										onChange={this.handleChange}
+										checked={fontName === this.props.value} />
+									{" "}
+									{fontName}
+								</label>
+							</li>
+						);
+					})}
+				</ul>
 			</div>
 		);
 	}
