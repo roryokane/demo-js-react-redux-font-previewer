@@ -3,7 +3,7 @@ import {SELECT_FONT, CHANGE_PREVIEW_TEXT} from '../constants/ActionTypes';
 //import dateHelper from '../businessLogic/dateHelper';
 
 const initialState = {
-	selectedFont: "Helvetica",
+	selectedFont: "Times New Roman",
 	previewText: "The quick brown fox jumps over the lazy dog."
 };
 

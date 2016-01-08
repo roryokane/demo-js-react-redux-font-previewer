@@ -13,33 +13,26 @@ class FontSelector extends Component {
 	}
 
 	render() {
-		//let selected = '';
-		
 		return (
 			<div className="font-selector">
 				<label>
 					Font:
 					{" "}
-					<select name="font-name" onChange={this.handleChange} value={this.props.selectedFont}>
-						<option value="Helvetica">Helvetica</option>
-						<option value="Times New Roman">Times New Roman</option>
+					<select name="font-name" onChange={this.handleChange} value={this.props.value}>
+						{this.props.options.map((fontName) => {
+							return <option value={fontName} key={fontName}>{fontName}</option>;
+						})}
 					</select>
 				</label>
 			</div>
-			
-			/* <input className="small"
-				type="text"
-				placeholder={this.props.placeholder}
-				value={this.props.value}
-				onChange={this.handleChange} /> */
 		);
 	}
 }
 
 FontSelector.propTypes = {
-	onChange: PropTypes.func.isRequired,
-	fonts: PropTypes.array.isRequired,
-	selectedFont: PropTypes.string
+	options: PropTypes.array.isRequired,
+	value: PropTypes.string.isRequired,
+	onChange: PropTypes.func.isRequired
 };
 
 export default FontSelector;

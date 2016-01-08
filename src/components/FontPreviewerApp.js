@@ -22,13 +22,13 @@ class FontPreviewerApp extends React.Component {
 
   render() {
     let settings = this.props.fontPreviewerAppState;
-    let fonts = ["Consolas", "Times New Roman"];
+    let fonts = ["Helvetica", "Times New Roman"];
 
     return (
       <div>
         <h2>Webfont Previewer</h2>
 
-        <FontSelector fonts={fonts} onChange={this.onFontSelected} />
+        <FontSelector options={fonts} value={settings.selectedFont} onChange={this.onFontSelected} />
         <PreviewTextInput value={settings.previewText} onChange={this.changePreviewText} />
         <PreviewText fontName={settings.selectedFont} text={settings.previewText} />
       </div>
