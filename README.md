@@ -1,7 +1,7 @@
 ## Demonstration React/Redux app
 ### Font Previewer
 
-This tiny app uses [React], [Redux], [Sass], and Webpack to implement an interactive webfont previewer. It was written in a few hours, just to demonstrate my knowledge of those technologies.
+This tiny app uses [React], [Redux], [Sass], and [Webpack] to implement an interactive webfont previewer. It was written in a few hours, just to demonstrate my knowledge of those technologies.
 
 ![screenshot](https://raw.githubusercontent.com/roryokane/demo-js-react-redux-font-previewer/master/screenshot.png)
 
