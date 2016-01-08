@@ -14,7 +14,7 @@ class PreviewTextInput extends Component {
 
 	render() {
 		return (
-			<div className="edit-preview-text">
+			<div className="section edit-preview-text">
 				<label>
 					Preview Text:
 					<textarea value={this.props.value} onChange={this.handleChange}></textarea>

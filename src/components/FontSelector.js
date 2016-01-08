@@ -14,7 +14,7 @@ class FontSelector extends Component {
 
 	render() {
 		return (
-			<div className="font-selector">
+			<div className="section font-selector">
 				<label>
 					Font:
 					{" "}

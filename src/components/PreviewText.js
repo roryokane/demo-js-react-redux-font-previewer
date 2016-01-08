@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 
 let PreviewText = (props) => {
     return (
-        <div className="preview-text">
+        <div className="section preview-text">
             <h3>Preview</h3>
             <div style={{fontFamily: props.fontName}}>
                 {props.text}
