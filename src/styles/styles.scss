@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lato|Oswald|Slabo+27px);
 
 /* Variables */
+$body-black: #4d4d4d;
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #ff0000;
@@ -13,7 +14,7 @@ $vin-red: #ff0000;
 body {
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
-  color: #4d4d4d;
+  color: $body-black;
   min-width: 230px;
   max-width: 550px;
   padding: 15px;
@@ -42,7 +43,7 @@ input, select, textarea {
   display: block;
   width: 100%;
   height: 4.5em;
-  color: #4d4d4d;
+  color: $body-black;
   padding: 5px;
 }
 
