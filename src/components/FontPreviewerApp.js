@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import FontSelector from './FontSelector';
 import PreviewTextInput from './PreviewTextInput';
 import PreviewText from './PreviewText';
+import supportedFonts from '../constants/SupportedFonts';
 
 class FontPreviewerApp extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class FontPreviewerApp extends React.Component {
 
   render() {
     let settings = this.props.fontPreviewerAppState;
-    let fonts = ["Times New Roman", "Helvetica", "Open Sans", "Roboto", "Slabo 27px", "Lato", "Oswald"];
+    let fonts = supportedFonts;
 
     return (
       <div>
