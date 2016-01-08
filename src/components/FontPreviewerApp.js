@@ -22,7 +22,7 @@ class FontPreviewerApp extends React.Component {
 
   render() {
     let settings = this.props.fontPreviewerAppState;
-    let fonts = ["Helvetica", "Times New Roman"];
+    let fonts = ["Times New Roman", "Helvetica", "Open Sans", "Roboto", "Slabo 27px", "Lato", "Oswald"];
 
     return (
       <div>

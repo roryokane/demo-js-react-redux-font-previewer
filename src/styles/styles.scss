@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lato|Oswald|Slabo+27px);
+
 /* Variables */
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
@@ -10,6 +12,8 @@ body {
   color: #4d4d4d;
   min-width: 230px;
   max-width: 550px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -37,11 +41,12 @@ input, select, textarea {
   height: 3em;
 }
 
+.preview-text {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
 h2 {
 	color: $vin-blue;
 }
-
-.savings { color: $vin-green; }
-.loss { color: $vin-red; }
-input.small { width: 46px; }
-td.fuel-savings-label { width: 175px; }

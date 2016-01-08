@@ -1,10 +1,12 @@
 import React, {PropTypes} from 'react';
 
 let PreviewText = (props) => {
+    let escapedFontName = '"' + props.fontName + '"';
+    
     return (
-        <div className="section preview-text">
+        <div className="section preview">
             <h3>Preview</h3>
-            <div style={{fontFamily: props.fontName}}>
+            <div className="preview-text" style={{fontFamily: escapedFontName}}>
                 {props.text}
             </div>
         </div>
